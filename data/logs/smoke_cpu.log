@@ -1,0 +1,249 @@
+
+######## 04_train_v2.ipynb cell 0
+[    0.0s] pipeline: <tmp>/kaggle/input/pipe
+
+######## 04_train_v2.ipynb cell 1
+[    0.0s] RadImageNet weights: <tmp>/kaggle/input/rad/ResNet50.pt
+[    0.0s] cache (30, 6, 12, 288, 288), slots filled 0.744, empty studies 0
+
+######## 04_train_v2.ipynb cell 2
+[    0.1s] report labels: <tmp>/kaggle/input/pipe/data/labels_v1_opus45.csv
+teachers: ['<tmp>/kaggle/input/pipe/data/teacher_oof_armA.csv']
+[    1.2s] 
+          target  labels  n_pos  targets
+             ACL   1.000      2    1.000
+             MCL   1.000      1    1.000
+ Medial Meniscus   1.000      3    1.000
+Lateral Meniscus   0.771      4    0.958
+       Medial OA   1.000      2    1.000
+      Lateral OA   0.938      2    0.812
+           PF OA   1.000      5    1.000
+        Effusion   0.667      6    0.708
+       Synovitis   0.708      4    0.875
+         Baker's   1.000      1    1.000
+       Contusion   0.750      2    0.938
+        Fracture   1.000      1    1.000
+[    1.2s] gold macro  labels 0.9028  ->  targets 0.9410
+
+######## 04_train_v2.ipynb cell 3
+[    1.3s] ==== fold 0: 20 train / 10 valid
+[    1.7s] RadImageNet ResNet50 loaded strict from <tmp>/kaggle/input/rad/ResNet50.pt
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[    3.5s]   ep 0 step 0/20 loss 0.7059 1.78s/it (waiting for data 0.01s/it)
+[   45.6s] epoch 0: {"epoch": 0, "loss": 0.5976, "min": 0.5677, "explicit": 0.4444, "gold": 0.2222}
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[   47.0s]   ep 1 step 0/20 loss 0.3008 1.41s/it (waiting for data 0.01s/it)
+[   87.8s] epoch 1: {"epoch": 1, "loss": 0.5566, "min": 0.536, "explicit": 0.4219, "gold": 0.1944}
+[   88.1s] loaded average of last 2 epochs
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[   97.5s] averaged weights: {'explicit': 0.5591666666666667, 'gold': 0.3888888888888889}
+[   97.6s] saved <tmp>/kaggle/working/v2_radr50_fold0.pt
+[   98.2s] ==== full-data model
+[   98.7s] RadImageNet ResNet50 loaded strict from <tmp>/kaggle/input/rad/ResNet50.pt
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[  100.0s]   ep 0 step 0/30 loss 0.7081 1.29s/it (waiting for data 0.01s/it)
+[  141.5s] epoch 0: {"epoch": 0, "loss": 0.6202, "min": 0.711}
+[  143.0s]   ep 1 step 0/30 loss 0.4706 1.47s/it (waiting for data 0.01s/it)
+[  188.8s] epoch 1: {"epoch": 1, "loss": 0.5474, "min": 0.787}
+[  189.2s] loaded average of last 2 epochs
+[  189.3s] saved <tmp>/kaggle/working/v2_radr50_full.pt
+[  190.4s] manifest: {'v2_radr50_fold0.pt': 'a5172198e8bb3333f11c182d74444b0863035e7af622a7cc6a9dcfad04278d6d', 'v2_radr50_full.pt': '573d707b8b87e08f6c39f6af05ba22533d37939a21da5dabd583ab2302e63d09'}
+
+######## 04_train_v2.ipynb cell 4
+[  190.4s] OOF vs explicit report statements (10 studies): macro 0.5592
+[  190.4s] 
+          target   auc  n_pos
+             ACL 0.333      1
+             MCL   NaN      0
+ Medial Meniscus   NaN      0
+Lateral Meniscus 0.000      2
+       Medial OA   NaN      0
+      Lateral OA 0.500      2
+           PF OA 0.500      2
+        Effusion   NaN      4
+       Synovitis 0.667      1
+         Baker's 0.333      1
+       Contusion   NaN      0
+        Fracture   NaN      0
+[  190.4s] OOF gold macro: 0.3889   (labels alone were 0.9028)
+[  190.4s] done. Save this version's output as a Dataset, e.g. rsna-knee-v2-radr50
+['history_radr50_f0.json', 'oof_v2_radr50_f0.csv', 'run_radr50_f0.json', 'v2_radr50_fold0.pt', 'v2_radr50_full.pt']
+
+######## 04_train_v2.ipynb cell 0
+[    0.0s] pipeline: <tmp>/kaggle/input/pipe
+
+######## 04_train_v2.ipynb cell 1
+[    0.0s] RadImageNet weights: <tmp>/kaggle/input/rad/ResNet50.pt
+[    0.0s] cache (30, 6, 12, 288, 288), slots filled 0.744, empty studies 0
+
+######## 04_train_v2.ipynb cell 2
+[    0.1s] report labels: <tmp>/kaggle/input/pipe/data/labels_v1_opus45.csv
+teachers: ['<tmp>/kaggle/input/pipe/data/teacher_oof_armA.csv', 'oof_smoke_teacher.csv']
+[    0.2s] 
+          target  labels  n_pos  targets
+             ACL   1.000      2    1.000
+             MCL   1.000      1    1.000
+ Medial Meniscus   1.000      3    1.000
+Lateral Meniscus   0.771      4    0.792
+       Medial OA   1.000      2    1.000
+      Lateral OA   0.938      2    0.688
+           PF OA   1.000      5    1.000
+        Effusion   0.667      6    0.792
+       Synovitis   0.708      4    0.875
+         Baker's   1.000      1    1.000
+       Contusion   0.750      2    0.938
+        Fracture   1.000      1    1.000
+[    0.2s] gold macro  labels 0.9028  ->  targets 0.9236
+
+######## 04_train_v2.ipynb cell 3
+[    0.2s] ==== fold 0: 20 train / 10 valid
+[    0.6s] RadImageNet ResNet50 loaded strict from <tmp>/kaggle/input/rad/ResNet50.pt
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[    1.9s]   ep 0 step 0/20 loss 0.7058 1.28s/it (waiting for data 0.01s/it)
+[   37.4s] epoch 0: {"epoch": 0, "loss": 0.6027, "min": 0.4621, "explicit": 0.4656, "gold": 0.5139}
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[   39.0s]   ep 1 step 0/20 loss 0.2836 1.55s/it (waiting for data 0.01s/it)
+[   77.6s] epoch 1: {"epoch": 1, "loss": 0.5607, "min": 0.5033, "explicit": 0.4495, "gold": 0.8194}
+[   77.9s] loaded average of last 2 epochs
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[   88.1s] averaged weights: {'explicit': 0.6581746031746032, 'gold': 0.638888888888889}
+[   88.2s] saved <tmp>/kaggle/working/v2_r2_fold0.pt
+[   89.1s] manifest: {'v2_r2_fold0.pt': 'c6fc8666ad9ef3fa4fe3e9f3194731696fd6a4e381225553528aaa7f2caf72db'}
+
+######## 04_train_v2.ipynb cell 4
+[   89.1s] OOF vs explicit report statements (10 studies): macro 0.6582
+[   89.1s] 
+          target   auc  n_pos
+             ACL 0.667      1
+             MCL   NaN      0
+ Medial Meniscus   NaN      0
+Lateral Meniscus 0.500      2
+       Medial OA   NaN      0
+      Lateral OA 0.500      2
+           PF OA 0.500      2
+        Effusion   NaN      4
+       Synovitis 0.667      1
+         Baker's 1.000      1
+       Contusion   NaN      0
+        Fracture   NaN      0
+[   89.1s] OOF gold macro: 0.6389   (labels alone were 0.9028)
+[   89.1s] done. Save this version's output as a Dataset, e.g. rsna-knee-v2-r2
+
+######## 04_train_v2.ipynb cell 0
+[    0.0s] pipeline: <tmp>/kaggle/input/pipe
+
+######## 04_train_v2.ipynb cell 1
+[    0.0s] RadImageNet weights: <tmp>/kaggle/input/rad/ResNet50.pt
+[    0.1s] cache 0.2 GB, local free 27.4 GB, already local 0.0 GB
+[    0.8s]   c3_train_s0of2.npy: copied, sha256 df8a8ec7dab6
+[    0.8s]   c3_train_s0of2_mask.npy: copied, sha256 1827cb4bb0a1
+[    0.8s]   c3_train_s0of2_studies.json: copied, sha256 e5604d431d29
+[    1.5s]   c3_train_s1of2.npy: copied, sha256 b66a5303458b
+[    1.5s]   c3_train_s1of2_mask.npy: copied, sha256 1827cb4bb0a1
+[    1.5s]   c3_train_s1of2_studies.json: copied, sha256 1556eb9820c3
+[    1.5s] cache copied to local disk in 1 s
+[    1.5s] read speed: 0.00 s per study (local disk: well under 0.5)
+[    1.5s] cache (30, 6, 16, 256, 256), slots filled 1.000, empty studies 0
+
+######## 04_train_v2.ipynb cell 2
+[    1.6s] report labels: <tmp>/kaggle/input/pipe/data/labels_v1_opus45.csv
+teachers: ['<tmp>/kaggle/input/pipe/data/teacher_oof_armA.csv']
+[    1.7s] 
+          target  labels  n_pos  targets
+             ACL   1.000      2    1.000
+             MCL   1.000      1    1.000
+ Medial Meniscus   1.000      3    1.000
+Lateral Meniscus   0.771      4    0.958
+       Medial OA   1.000      2    1.000
+      Lateral OA   0.938      2    0.812
+           PF OA   1.000      5    1.000
+        Effusion   0.667      6    0.708
+       Synovitis   0.708      4    0.875
+         Baker's   1.000      1    1.000
+       Contusion   0.750      2    0.938
+        Fracture   1.000      1    1.000
+[    1.7s] gold macro  labels 0.9028  ->  targets 0.9410
+
+######## 04_train_v2.ipynb cell 3
+[    1.8s] ==== fold 0: 20 train / 10 valid
+[    2.2s] RadImageNet ResNet50 loaded strict from <tmp>/kaggle/input/rad/ResNet50.pt
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[    5.3s]   ep 0 step 0/20 loss 0.7002 3.01s/it (waiting for data 0.01s/it)
+[   67.7s] epoch 0: {"epoch": 0, "loss": 0.6244, "min": 0.9619, "explicit": 0.3436, "gold": 0.375}
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[   70.2s]   ep 1 step 0/20 loss 0.3432 2.53s/it (waiting for data 0.01s/it)
+[  134.6s] epoch 1: {"epoch": 1, "loss": 0.5736, "min": 0.9821, "explicit": 0.5026, "gold": 0.6806}
+[  134.9s] loaded average of last 2 epochs
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[  142.3s] averaged weights: {'explicit': 0.29410714285714284, 'gold': 0.18055555555555558}
+[  142.4s] saved <tmp>/kaggle/working/v2_r3_fold0.pt
+[  143.3s] manifest: {'v2_r3_fold0.pt': '313eed2f842f2abf46cf98a0a9eb937121d33ff950b18ff832be2c9aeda39ad4'}
+
+######## 04_train_v2.ipynb cell 4
+[  143.3s] OOF vs explicit report statements (10 studies): macro 0.2941
+[  143.3s] 
+          target   auc  n_pos
+             ACL 0.000      1
+             MCL   NaN      0
+ Medial Meniscus   NaN      0
+Lateral Meniscus 0.500      2
+       Medial OA   NaN      0
+      Lateral OA 0.000      2
+           PF OA 0.250      2
+        Effusion   NaN      4
+       Synovitis 0.000      1
+         Baker's 0.333      1
+       Contusion   NaN      0
+        Fracture   NaN      0
+[  143.3s] OOF gold macro: 0.1806   (labels alone were 0.9028)
+[  143.3s] done. Save this version's output as a Dataset, e.g. rsna-knee-v2-r3
+
+######## 05_submit_v2.ipynb cell 0
+[    0.0s] pipeline: <tmp>/kaggle/input/pipe
+
+######## 05_submit_v2.ipynb cell 1
+
+######## 05_submit_v2.ipynb cell 2
+[    0.8s] family r2 (v1): ['v2_r2_fold0.pt']
+[    0.8s] family r3 (v3): ['v2_r3_fold0.pt']
+[    0.9s] family radr50 (v1): ['v2_radr50_fold0.pt', 'v2_radr50_full.pt']
+[    0.9s] public arm armA: ['armA_fold0.pt']
+[    0.9s] public arm armB: ['armB_fold0.pt']
+
+######## 05_submit_v2.ipynb cell 3
+[    1.4s] cache test: 0/3 studies, 0 slot failures
+[    2.5s] cache test: done, 0 slot failures, 0.0 GB at <tmp>/kaggle/temp/test_cache/test_288px_12sl_130mm_3e8da8.npy
+[    2.5s] v1 test cache done at 0.0 min
+[    4.6s] c3_test_s0of1: 3 studies, fill 1.000, empty 0, slices read 288, failed and replaced 0
+[    4.6s] v3 test cache done at 0.1 min
+/usr/local/lib/python3.13/dist-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[   10.2s]   v2_r2_fold0.pt: 3 studies
+[   10.2s] family r2 done at 0.2 min
+[   15.4s]   v2_r3_fold0.pt: 3 studies
+[   15.4s] family r3 done at 0.3 min
+[   21.4s]   v2_radr50_fold0.pt: 3 studies
+[   27.8s]   v2_radr50_full.pt: 3 studies
+[   27.8s] family radr50 done at 0.5 min
+[   50.8s]   armA: 1 checkpoints over 3 studies
+[   50.8s] arm armA done at 0.8 min
+[   71.8s]   armB: 1 checkpoints over 3 studies
+[   71.8s] arm armB done at 1.2 min
+[   71.8s] blend weights: {'r2': 1.0, 'r3': 1.0, 'radr50': 1.0, 'ntejas_armA': 0.5, 'ntejas_armB': 0.5}
+[   71.9s] submission written and validated: (3, 13)
+[   71.9s] total 1.2 min
+                                                   StudyInstanceUID    ACL    MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA  PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture
+0  1.2.826.0.1.3680043.8.498.53075335102653833329218432039532470155  0.667  0.333            0.667             1.000      1.000       1.000  0.667       0.5      1.000    1.000      0.667     0.667
+1  1.2.826.0.1.3680043.8.498.97376486034490795012396452066151642358  0.333  1.000            0.333             0.667      0.667       0.667  1.000       1.0      0.667    0.667      1.000     1.000
+2  1.2.826.0.1.3680043.8.498.34259734724337387840699340103836867647  1.000  0.667            1.000             0.333      0.333       0.333  0.333       0.5      0.333    0.333      0.333     0.333
+outputs checked: submission rows, value range, checkpoint provenance

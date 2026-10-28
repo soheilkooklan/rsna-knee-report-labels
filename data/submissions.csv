@@ -1,0 +1,15 @@
+row,submission,kind,public,private
+1,Version 1,own,0.735,0.713
+2,Version 2 fold 0 (cache v1),own,0.883,0.867
+3,Speedy Raptors + row 2 at 0.3,public+own,0.939,0.923
+4,RSNA_Versia_7 (older),public,0.956,0.940
+5,Row 4 + row 2 at 0.1,public+own,0.956,0.940
+6,Version 2 five folds,own,0.887,0.872
+7,Row 4 + row 6 at 0.2,public+own,0.954,0.939
+8,Speedy Raptors + row 6 at 0.3,public+own,0.940,0.925
+9,RSNA_Versia_7 (newer),public,0.958,0.942
+10,heliosli 0.9586,public,0.957,0.942
+11,goodpjw2008 CoAtNet + R6,public,0.958,0.942
+12,Row 9 + EA lambda -0.1,public+own,0.958,0.943
+13,Row 11 + EA lambda -0.2,public+own,0.957,0.942
+14,Labels-only student five folds (after the deadline),own,0.891,0.877

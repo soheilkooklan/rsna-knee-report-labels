@@ -1,0 +1,14 @@
+# Versions used for the CPU analyses and tests of this release (Python 3.13).
+# The Kaggle GPU runs used the Kaggle image of October 2026 (Python 3.12/3.13, torch 2.10, CUDA 12.8).
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+torch==2.14.1
+torchvision==0.29.1
+timm==1.0.30
+pydicom==3.0.2
+opencv-python-headless==5.0.0
+pillow==12.3.0
+pytest==9.1.1

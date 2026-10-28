@@ -1,0 +1,38 @@
+9.6s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.6s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.6s 3 0.00s - to python to disable frozen modules.
+9.6s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.5s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+10.5s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+10.5s 7 0.00s - to python to disable frozen modules.
+10.5s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.2s 9 [    1.3s] pipeline: /kaggle/input/datasets/soheilkooklan/rsna-knee-pipeline
+1893.0s 10 [ 1881.1s] series 24371, with geometry 24371
+1893.0s 11 [ 1881.2s] axis order equals stack-normal order: 1.0000 (same direction 0.5953, reversed 0.4047)
+1893.0s 12 [ 1881.2s] largest-spread axis is the plane's own axis: 1.0000
+1893.0s 13 [ 1881.2s] pixel spacing anisotropic (>1%): 0.0000
+1893.1s 14 [ 1881.2s] window span (mm) by plane:
+1893.1s 15 count   mean   std   min    25%    50%    75%    max
+1893.1s 16 plane
+1893.1s 17 Axial     5898.0  14.03  2.82  3.96  12.27  14.00  15.68  28.00
+1893.1s 18 Coronal   8609.0  11.72  2.09  2.40  11.00  11.73  12.80  19.20
+1893.1s 19 Sagittal  9864.0  11.69  1.63  2.24  10.92  11.60  12.60  23.33
+1893.1s 20 [ 1881.2s] tilt from the nearest axis (deg) by plane:
+1893.1s 21 count  mean  std  min  25%  50%   75%   max
+1893.1s 22 plane
+1893.1s 23 Axial     5898.0   4.7  4.1  0.0  1.9  4.2   6.5  41.3
+1893.1s 24 Coronal   8609.0  10.3  7.9  0.0  5.1  8.4  12.5  41.4
+1893.1s 25 Sagittal  9864.0   8.6  5.8  0.0  4.3  7.5  11.7  40.9
+1893.1s 26 [ 1881.2s] plane from the slice normal agrees with the series label: 1.0000
+1893.1s 27 [ 1881.2s] series without enough positions or orientation: 0.0000
+1893.1s 28 [ 1881.3s] PatientID present for 4407 of 4407 studies; 4407 distinct values; studies sharing a PatientID with another study: 0
+1893.3s 29 [ 1881.4s] PatientIDs whose studies fall into more than one fold: 0
+1893.3s 30 [ 1881.4s] laterality tag present: 0.4926; median x at least 20 mm from 0 where absent: 0.8567
+1897.3s 31 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+1897.3s 32 cells[i][c] = re.sub('\\\\\|', '|', cell)
+1897.5s 33 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+1897.5s 34 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+1898.6s 35 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1898.7s 36 [NbConvertApp] Writing 11588 bytes to __notebook__.ipynb
+1902.0s 37 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1902.8s 38 [NbConvertApp] Writing 316529 bytes to __results__.html

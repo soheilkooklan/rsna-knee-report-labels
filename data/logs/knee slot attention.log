@@ -1,0 +1,25 @@
+8.8s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.8s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.8s 3 0.00s - to python to disable frozen modules.
+8.8s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.5s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.5s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.5s 7 0.00s - to python to disable frozen modules.
+9.5s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.4s 9 [    1.7s] pipeline: /kaggle/input/datasets/soheilkooklan/rsna-knee-pipeline/RSNA Knee Pipeline v6/rsna-knee-pipeline
+23.0s 10 [   12.3s] cache 27.7 GB, local free 1126.1 GB
+429.8s 11 [  418.8s] cache copied to local disk in 407 s
+547.9s 12 [  537.2s] fold 0: 882 studies
+649.3s 13 [  638.6s] fold 1: 881 studies
+750.5s 14 [  739.8s] fold 2: 881 studies
+856.1s 15 [  845.4s] fold 3: 882 studies
+961.0s 16 [  950.3s] fold 4: 881 studies
+961.0s 17 [  950.3s] done
+967.4s 18 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+967.4s 19 cells[i][c] = re.sub('\\\\\|', '|', cell)
+967.6s 20 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+967.6s 21 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+968.9s 22 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+968.9s 23 [NbConvertApp] Writing 7767 bytes to __notebook__.ipynb
+971.7s 24 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+972.4s 25 [NbConvertApp] Writing 300439 bytes to __results__.html

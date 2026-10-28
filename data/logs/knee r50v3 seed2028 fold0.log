@@ -1,0 +1,144 @@
+11.9s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.9s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.9s 3 0.00s - to python to disable frozen modules.
+11.9s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.7s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.7s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.7s 7 0.00s - to python to disable frozen modules.
+12.7s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+17.7s 9 [    3.6s] pipeline: /kaggle/input/datasets/soheilkooklan/rsna-knee-pipeline/RSNA Knee Pipeline v6/rsna-knee-pipeline
+18.7s 10 [    4.6s] local cache copy enabled
+20.8s 11 [    6.8s] RadImageNet weights: /kaggle/input/datasets/marwanmath/resnet-50-radimagenet-marwan/ResNet50.pt
+21.3s 12 [    7.2s] cache 27.7 GB, local free 1126.1 GB
+491.4s 13 [  477.3s] cache copied to local disk in 470 s
+492.0s 14 [  477.9s] read speed check: 0.04 s per study (should be well under 0.5)
+492.0s 15 [  477.9s] cache (4407, 6, 16, 256, 256), slots filled 0.807, empty studies 0
+493.4s 16 [  479.3s] report labels: /kaggle/input/datasets/soheilkooklan/rsna-knee-pipeline/RSNA Knee Pipeline v6/rsna-knee-pipeline/data/labels_v1_opus45.csv
+493.4s 17 teachers: ['/kaggle/input/datasets/soheilkooklan/rsna-knee-pipeline/RSNA Knee Pipeline v6/rsna-knee-pipeline/data/teacher_oof_armA.csv']
+499.6s 18 [  485.6s]
+499.6s 19 target  labels  n_pos  targets
+499.6s 20 ACL   0.996     24    0.993
+499.6s 21 MCL   0.992      9    0.975
+499.6s 22 Medial Meniscus   0.955     26    0.968
+499.6s 23 Lateral Meniscus   0.875     23    0.929
+499.6s 24 Medial OA   0.905     15    0.952
+499.6s 25 Lateral OA   0.847     11    0.858
+499.6s 26 PF OA   0.945     21    0.915
+499.6s 27 Effusion   0.820     35    0.928
+499.6s 28 Synovitis   0.783     27    0.857
+499.6s 29 Baker's   0.831     12    0.895
+499.6s 30 Contusion   0.865     19    0.921
+499.6s 31 Fracture   0.890     18    0.935
+499.6s 32 [  485.6s] gold macro  labels 0.8919  ->  targets 0.9270
+499.7s 33 [  485.6s] seed 2028
+499.7s 34 [  485.6s] ==== fold 0: 3525 train / 882 valid
+550.0s 35 [  535.9s] RadImageNet ResNet50 loaded strict from /kaggle/input/datasets/marwanmath/resnet-50-radimagenet-marwan/ResNet50.pt
+550.5s 36 [  536.4s] DataParallel over 2 GPUs
+556.8s 37 [  542.7s]   ep 0 step 0/1762 loss 0.7042 6.26s/it (waiting for data 0.64s/it)
+599.1s 38 [  585.1s]   ep 0 step 200/1762 loss 0.5560 0.24s/it (waiting for data 0.00s/it)
+641.5s 39 [  627.4s]   ep 0 step 400/1762 loss 0.5323 0.23s/it (waiting for data 0.00s/it)
+684.7s 40 [  670.7s]   ep 0 step 600/1762 loss 0.5198 0.22s/it (waiting for data 0.00s/it)
+728.8s 41 [  714.8s]   ep 0 step 800/1762 loss 0.5158 0.22s/it (waiting for data 0.00s/it)
+773.3s 42 [  759.2s]   ep 0 step 1000/1762 loss 0.5042 0.22s/it (waiting for data 0.00s/it)
+817.4s 43 [  803.3s]   ep 0 step 1200/1762 loss 0.4992 0.22s/it (waiting for data 0.00s/it)
+862.0s 44 [  847.9s]   ep 0 step 1400/1762 loss 0.4939 0.22s/it (waiting for data 0.00s/it)
+907.3s 45 [  893.3s]   ep 0 step 1600/1762 loss 0.4885 0.22s/it (waiting for data 0.00s/it)
+1043.9s 46 [ 1029.8s] epoch 0: {"epoch": 0, "loss": 0.4841, "min": 6.5591, "explicit": 0.7939, "gold": 0.8466}
+1044.5s 47 [ 1030.5s]   ep 1 step 0/1762 loss 0.4550 0.68s/it (waiting for data 0.36s/it)
+1087.8s 48 [ 1073.8s]   ep 1 step 200/1762 loss 0.4487 0.22s/it (waiting for data 0.00s/it)
+1130.1s 49 [ 1116.0s]   ep 1 step 400/1762 loss 0.4519 0.22s/it (waiting for data 0.00s/it)
+1172.8s 50 [ 1158.7s]   ep 1 step 600/1762 loss 0.4469 0.21s/it (waiting for data 0.00s/it)
+1215.8s 51 [ 1201.7s]   ep 1 step 800/1762 loss 0.4419 0.21s/it (waiting for data 0.00s/it)
+1258.8s 52 [ 1244.7s]   ep 1 step 1000/1762 loss 0.4395 0.21s/it (waiting for data 0.00s/it)
+1301.7s 53 [ 1287.6s]   ep 1 step 1200/1762 loss 0.4389 0.21s/it (waiting for data 0.00s/it)
+1344.8s 54 [ 1330.7s]   ep 1 step 1400/1762 loss 0.4384 0.21s/it (waiting for data 0.00s/it)
+1387.8s 55 [ 1373.7s]   ep 1 step 1600/1762 loss 0.4397 0.21s/it (waiting for data 0.00s/it)
+1522.6s 56 [ 1508.5s] epoch 1: {"epoch": 1, "loss": 0.4388, "min": 6.3144, "explicit": 0.8171, "gold": 0.818}
+1523.5s 57 [ 1509.4s]   ep 2 step 0/1762 loss 0.4310 0.87s/it (waiting for data 0.53s/it)
+1566.2s 58 [ 1552.1s]   ep 2 step 200/1762 loss 0.4203 0.22s/it (waiting for data 0.00s/it)
+1608.7s 59 [ 1594.6s]   ep 2 step 400/1762 loss 0.4224 0.22s/it (waiting for data 0.00s/it)
+1651.5s 60 [ 1637.4s]   ep 2 step 600/1762 loss 0.4218 0.21s/it (waiting for data 0.00s/it)
+1694.4s 61 [ 1680.3s]   ep 2 step 800/1762 loss 0.4214 0.21s/it (waiting for data 0.00s/it)
+1737.4s 62 [ 1723.3s]   ep 2 step 1000/1762 loss 0.4213 0.21s/it (waiting for data 0.00s/it)
+1780.2s 63 [ 1766.1s]   ep 2 step 1200/1762 loss 0.4222 0.21s/it (waiting for data 0.00s/it)
+1823.4s 64 [ 1809.3s]   ep 2 step 1400/1762 loss 0.4216 0.21s/it (waiting for data 0.00s/it)
+1866.5s 65 [ 1852.4s]   ep 2 step 1600/1762 loss 0.4223 0.21s/it (waiting for data 0.00s/it)
+2001.2s 66 [ 1987.1s] epoch 2: {"epoch": 2, "loss": 0.4225, "min": 6.3094, "explicit": 0.8308, "gold": 0.8772}
+2002.2s 67 [ 1988.1s]   ep 3 step 0/1762 loss 0.4949 0.95s/it (waiting for data 0.63s/it)
+2045.2s 68 [ 2031.1s]   ep 3 step 200/1762 loss 0.4119 0.22s/it (waiting for data 0.00s/it)
+2088.2s 69 [ 2074.1s]   ep 3 step 400/1762 loss 0.4171 0.22s/it (waiting for data 0.00s/it)
+2131.4s 70 [ 2117.3s]   ep 3 step 600/1762 loss 0.4189 0.22s/it (waiting for data 0.00s/it)
+2174.5s 71 [ 2160.4s]   ep 3 step 800/1762 loss 0.4162 0.22s/it (waiting for data 0.00s/it)
+2217.7s 72 [ 2203.6s]   ep 3 step 1000/1762 loss 0.4183 0.22s/it (waiting for data 0.00s/it)
+2261.0s 73 [ 2246.9s]   ep 3 step 1200/1762 loss 0.4178 0.22s/it (waiting for data 0.00s/it)
+2304.5s 74 [ 2290.4s]   ep 3 step 1400/1762 loss 0.4157 0.22s/it (waiting for data 0.00s/it)
+2347.8s 75 [ 2333.8s]   ep 3 step 1600/1762 loss 0.4132 0.22s/it (waiting for data 0.00s/it)
+2482.9s 76 [ 2468.8s] epoch 3: {"epoch": 3, "loss": 0.4133, "min": 6.3598, "explicit": 0.8465, "gold": 0.9157}
+2484.1s 77 [ 2470.0s]   ep 4 step 0/1762 loss 0.3160 1.19s/it (waiting for data 0.85s/it)
+2527.2s 78 [ 2513.1s]   ep 4 step 200/1762 loss 0.3988 0.22s/it (waiting for data 0.00s/it)
+2570.0s 79 [ 2555.9s]   ep 4 step 400/1762 loss 0.4066 0.22s/it (waiting for data 0.00s/it)
+2612.6s 80 [ 2598.6s]   ep 4 step 600/1762 loss 0.4093 0.22s/it (waiting for data 0.00s/it)
+2655.5s 81 [ 2641.4s]   ep 4 step 800/1762 loss 0.4109 0.22s/it (waiting for data 0.00s/it)
+2698.4s 82 [ 2684.4s]   ep 4 step 1000/1762 loss 0.4068 0.22s/it (waiting for data 0.00s/it)
+2741.1s 83 [ 2727.1s]   ep 4 step 1200/1762 loss 0.4045 0.22s/it (waiting for data 0.00s/it)
+2784.0s 84 [ 2769.9s]   ep 4 step 1400/1762 loss 0.4055 0.22s/it (waiting for data 0.00s/it)
+2826.6s 85 [ 2812.5s]   ep 4 step 1600/1762 loss 0.4045 0.21s/it (waiting for data 0.00s/it)
+2961.4s 86 [ 2947.3s] epoch 4: {"epoch": 4, "loss": 0.4054, "min": 6.3053, "explicit": 0.8512, "gold": 0.8966}
+2962.6s 87 [ 2948.5s]   ep 5 step 0/1762 loss 0.4363 1.18s/it (waiting for data 0.85s/it)
+3005.3s 88 [ 2991.2s]   ep 5 step 200/1762 loss 0.4003 0.22s/it (waiting for data 0.00s/it)
+3048.1s 89 [ 3034.0s]   ep 5 step 400/1762 loss 0.4012 0.22s/it (waiting for data 0.00s/it)
+3091.2s 90 [ 3077.2s]   ep 5 step 600/1762 loss 0.3989 0.22s/it (waiting for data 0.00s/it)
+3133.9s 91 [ 3119.8s]   ep 5 step 800/1762 loss 0.3962 0.22s/it (waiting for data 0.00s/it)
+3176.7s 92 [ 3162.6s]   ep 5 step 1000/1762 loss 0.3979 0.22s/it (waiting for data 0.00s/it)
+3219.4s 93 [ 3205.3s]   ep 5 step 1200/1762 loss 0.3970 0.21s/it (waiting for data 0.00s/it)
+3263.3s 94 [ 3249.2s]   ep 5 step 1400/1762 loss 0.3990 0.22s/it (waiting for data 0.00s/it)
+3309.0s 95 [ 3294.9s]   ep 5 step 1600/1762 loss 0.3983 0.22s/it (waiting for data 0.00s/it)
+3448.1s 96 [ 3434.0s] epoch 5: {"epoch": 5, "loss": 0.3991, "min": 6.4319, "explicit": 0.8547, "gold": 0.8888}
+3449.7s 97 [ 3435.6s]   ep 6 step 0/1762 loss 0.4774 1.58s/it (waiting for data 1.21s/it)
+3496.6s 98 [ 3482.5s]   ep 6 step 200/1762 loss 0.4004 0.24s/it (waiting for data 0.01s/it)
+3543.2s 99 [ 3529.1s]   ep 6 step 400/1762 loss 0.3975 0.24s/it (waiting for data 0.00s/it)
+3589.9s 100 [ 3575.8s]   ep 6 step 600/1762 loss 0.3974 0.24s/it (waiting for data 0.00s/it)
+3636.9s 101 [ 3622.8s]   ep 6 step 800/1762 loss 0.3967 0.24s/it (waiting for data 0.00s/it)
+3684.4s 102 [ 3670.3s]   ep 6 step 1000/1762 loss 0.3966 0.24s/it (waiting for data 0.00s/it)
+3731.6s 103 [ 3717.6s]   ep 6 step 1200/1762 loss 0.3963 0.24s/it (waiting for data 0.00s/it)
+3778.8s 104 [ 3764.7s]   ep 6 step 1400/1762 loss 0.3942 0.24s/it (waiting for data 0.00s/it)
+3826.1s 105 [ 3812.0s]   ep 6 step 1600/1762 loss 0.3945 0.24s/it (waiting for data 0.00s/it)
+3965.8s 106 [ 3951.7s] epoch 6: {"epoch": 6, "loss": 0.3953, "min": 6.9449, "explicit": 0.8569, "gold": 0.9085}
+3967.4s 107 [ 3953.4s]   ep 7 step 0/1762 loss 0.3524 1.62s/it (waiting for data 1.26s/it)
+4012.8s 108 [ 3998.8s]   ep 7 step 200/1762 loss 0.3988 0.24s/it (waiting for data 0.01s/it)
+4056.8s 109 [ 4042.7s]   ep 7 step 400/1762 loss 0.3980 0.23s/it (waiting for data 0.00s/it)
+4100.7s 110 [ 4086.6s]   ep 7 step 600/1762 loss 0.3993 0.22s/it (waiting for data 0.00s/it)
+4144.1s 111 [ 4130.1s]   ep 7 step 800/1762 loss 0.3956 0.22s/it (waiting for data 0.00s/it)
+4188.1s 112 [ 4174.0s]   ep 7 step 1000/1762 loss 0.3928 0.22s/it (waiting for data 0.00s/it)
+4232.3s 113 [ 4218.2s]   ep 7 step 1200/1762 loss 0.3932 0.22s/it (waiting for data 0.00s/it)
+4277.3s 114 [ 4263.2s]   ep 7 step 1400/1762 loss 0.3942 0.22s/it (waiting for data 0.00s/it)
+4322.9s 115 [ 4308.8s]   ep 7 step 1600/1762 loss 0.3940 0.22s/it (waiting for data 0.00s/it)
+4460.6s 116 [ 4446.5s] epoch 7: {"epoch": 7, "loss": 0.3932, "min": 6.5663, "explicit": 0.8575, "gold": 0.9085}
+4460.9s 117 [ 4446.8s] loaded average of last 3 epochs
+4561.5s 118 [ 4547.4s] averaged weights: {'explicit': 0.8566724814099514, 'gold': 0.9084656084656085}
+4561.6s 119 [ 4547.5s] saved /kaggle/working/v2_r50v3seed2028_fold0.pt
+4562.4s 120 [ 4548.3s] OOF vs explicit report statements (882 studies): macro 0.8567
+4562.4s 121 [ 4548.3s]
+4562.4s 122 target   auc  n_pos
+4562.4s 123 ACL 0.889      2
+4562.4s 124 MCL 0.722      2
+4562.4s 125 Medial Meniscus 1.000      5
+4562.4s 126 Lateral Meniscus 1.000      6
+4562.4s 127 Medial OA 1.000      5
+4562.4s 128 Lateral OA 0.889      2
+4562.4s 129 PF OA 0.833      5
+4562.4s 130 Effusion 0.933      5
+4562.4s 131 Synovitis 0.857      4
+4562.4s 132 Baker's 1.000      3
+4562.4s 133 Contusion 0.944      2
+4562.4s 134 Fracture 0.833      2
+4562.4s 135 [ 4548.3s] OOF gold macro: 0.9085   (labels alone were 0.8919)
+4562.4s 136 [ 4548.3s] done. Save this version's output as a Dataset, e.g. rsna-knee-v2-r50v3seed2028
+4572.8s 137 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+4572.8s 138 cells[i][c] = re.sub('\\\\\|', '|', cell)
+4573.3s 139 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+4573.3s 140 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+4575.7s 141 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+4575.8s 142 [NbConvertApp] Writing 25977 bytes to __notebook__.ipynb
+4578.2s 143 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+4579.5s 144 [NbConvertApp] Writing 334635 bytes to __results__.html
